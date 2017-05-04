@@ -32,8 +32,8 @@ public class SuperReducedString {
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-	    String s = in.next();
-	    reduceString(s);
+	    	String s = in.next();
+	    	reduceString(s);
 	}
 
 }
