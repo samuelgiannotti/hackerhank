@@ -1,31 +1,26 @@
 package hackerhank.algorithms.tree;
 
-class BinaryTreeTraversals
-{
+class BinaryTreeTraversals {
     int key;
     BinaryTreeTraversals left, right;
  
-    public BinaryTreeTraversals(int item)
-    {
+    public BinaryTreeTraversals(int item) {
         key = item;
         left = right = null;
     }
 }
  
-class BinaryTree
-{
+class BinaryTree {
     // Root of Binary Tree
     BinaryTreeTraversals root;
  
-    BinaryTree()
-    {
+    BinaryTree() {
         root = null;
     }
  
     /* Given a binary tree, print its nodes according to the
       "bottom-up" postorder traversal. */
-    void printPostorder(BinaryTreeTraversals node)
-    {
+    void printPostorder(BinaryTreeTraversals node) {
         if (node == null)
             return;
  
@@ -40,8 +35,7 @@ class BinaryTree
     }
  
     /* Given a binary tree, print its nodes in inorder*/
-    void printInorder(BinaryTreeTraversals node)
-    {
+    void printInorder(BinaryTreeTraversals node) {
         if (node == null)
             return;
  
@@ -56,8 +50,7 @@ class BinaryTree
     }
  
     /* Given a binary tree, print its nodes in preorder*/
-    void printPreorder(BinaryTreeTraversals node)
-    {
+    void printPreorder(BinaryTreeTraversals node) {
         if (node == null)
             return;
  
@@ -77,8 +70,7 @@ class BinaryTree
     void printPreorder()   {     printPreorder(root);  }
  
     // Driver method
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();
         tree.root = new BinaryTreeTraversals(1);
         tree.root.left = new BinaryTreeTraversals(2);
