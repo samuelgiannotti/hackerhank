@@ -69,8 +69,6 @@ public class RunningTimeOfQuickSort {
          }
          quickSort(ar, 0, s-1);
          insertionSort(ar2);
-         System.out.println("quickSortSwaps:"+quickSortSwaps);
-         System.out.println("insertionSortSwaps:"+insertionSortSwaps);
          System.out.println(insertionSortSwaps-quickSortSwaps);
 	}
 
