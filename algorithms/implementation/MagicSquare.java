@@ -2,6 +2,13 @@ package hackerhank.algorithms.implementation;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Samuel Giannotti
+ * 
+ * https://www.hackerrank.com/challenges/magic-square-forming
+ *
+ */
 public class MagicSquare {
 
 	public static void calcCost(int[][] s) {
